@@ -29,17 +29,21 @@ jhonMoney('Jhon', 50)
 function shoppingCart(){
     let cart = []
 
-    function addItems(item){
-        cart.push(item)
-        console.log(cart)
+     function addItems(item){
+        if(item){
+          cart.push(item)
+          console.log(cart)
+        } 
     }
 
-    return addItems;
+    return addItems
+
 }
 
 
 //Create Instance of shoppingCart function
 const techMerch = shoppingCart()
+techMerch()
 techMerch('Earbuds')
 techMerch('Mouse')
 techMerch('Keyboard')
